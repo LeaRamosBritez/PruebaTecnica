@@ -3,6 +3,16 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+
+/*
+ 
+ Consigna:
+-. La regla general es que las palabras se deben transformar poniendo la primera letra al final y luego un "ay".
+-. Parte 1:
+- Cuando se ingresa "hello", se debe traducir a "ellohay"
+
+*/
+
 public class Main {
 
 	public static void main(String[] args) {
