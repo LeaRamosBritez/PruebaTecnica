@@ -11,6 +11,10 @@ import java.util.stream.Collectors;
 -. Parte 1:
 - Cuando se ingresa "hello", se debe traducir a "ellohay"
 
+
+parte 2.
+Consigna:
+-. Cuando se ingresa "hello world", se debe traducir a "ellohay orldway"
 */
 
 public class Main {
