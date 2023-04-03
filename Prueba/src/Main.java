@@ -48,7 +48,7 @@ public class Main {
 			}			
 			return palabraFinal;
 		}else {
-			return palabraAgregada;
+			return palabraAgregada.substring(0,1).toUpperCase() + palabraAgregada.substring(1);
 		}
 	}
 }
