@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 
 
 /*
- 
  Consigna:
 -. La regla general es que las palabras se deben transformar poniendo la primera letra al final y luego un "ay".
 -. Parte 1:
@@ -15,6 +14,11 @@ import java.util.stream.Collectors;
 parte 2.
 Consigna:
 -. Cuando se ingresa "hello world", se debe traducir a "ellohay orldway"
+
+Te paso la parte 3.
+Consigna:
+
+-. Cuando se ingresa "hello world", se traduce la primer letra a "Ellohay Orldway"
 */
 
 public class Main {
@@ -36,17 +40,15 @@ public class Main {
 		if(!texto.equals("")) {
 			List<String> palabras = Arrays.stream(texto.split("\\W+"))
 	                .filter(palabra -> !palabra.isEmpty())
-	                .map(palabra -> palabra.substring(1) + palabra.charAt(0) + palabraAgregada)
+	                .map(palabra -> palabra.substring(1,2).toUpperCase() + palabra.substring(2) + palabra.toLowerCase().charAt(0) + palabraAgregada)
 	                .collect(Collectors.toList());
 			
 			for (String palabra : palabras) {
 				palabraFinal+=palabra+" "; 
-			}
+			}			
+			return palabraFinal;
 		}else {
 			return palabraAgregada;
 		}
-
-		
-		return palabraFinal;
 	}
 }
